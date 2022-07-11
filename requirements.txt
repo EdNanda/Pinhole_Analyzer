@@ -1,0 +1,6 @@
+astropy==4.0.2
+matplotlib==3.3.4
+numpy==1.20.2
+opencv_python==4.5.1.48
+openpyxl==3.0.7
+Pillow==9.2.0
