@@ -20,6 +20,17 @@ To use Pinhole Analyzer, you need to clone the project and run it from the sourc
      2. `microscope_analyzer_lext.py`
      3. `microscope_analyzer_lext_results_separator.py`
 
+## File Descriptions
+
+1. **`microscope_analyzer_lext_image_separator.py`**:
+   - This script is used to separate pictures into batches of 25. Measurements are automatic and pictures from multiple samples are saved in the same folder. This program separates them into their own folders.
+
+2. **`microscope_analyzer_lext.py`**:
+   - This script analyzes the images. It creates a duplicate of each image showing the pinhole locations in green, alongside a bubble plot showing the average number of pinholes and another one showing the average area of the pinholes in those pictures. Additionally, it creates a collage of all the pictures for easy viewing of the layer status in a single look. After analyzing all samples, it creates two boxplots comparing the counts and the areas of each sample.
+
+3. **`microscope_analyzer_lext_results_separator.py`**:
+   - This script collects all bubble plots for counts and areas, as well as the collages, into separate folders.
+
 ## Usage
 Clone the project and run the scripts in the specified order. The program will process images to separate them, analyze pinholes, and organize the results.
 
